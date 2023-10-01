@@ -62,7 +62,7 @@
                 </div>
             </div>
             <!-- INFO -->
-            <div class="bg-white drop-shadow-light">
+            <div class="bg-white drop-shadow-light relative">
                 <h1>test</h1>
             </div>
         </div>
