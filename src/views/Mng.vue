@@ -85,7 +85,7 @@
                 </div>
             </div>
             <!-- INFO -->
-            <div class="bg-white flex-grow basis-1/2 drop-shadow-light w-full px-9">
+            <div class="bg-white flex-grow basis-1/2 drop-shadow-light w-full px-9 relative">
                 <h1>test</h1>
             </div>
         </div>
