@@ -30,16 +30,14 @@
             <InputC name="areas3" label="مناطق خدمات"  wrapperClass="flex lg:items-start lg:items-center lg:flex-row flex-col gap-x-0 lg:gap-x-28" />
         </div>
         <button class="btn btn-fill font-bold">حفظ</button>
-        <SelectC name="select-test" label="مناطق خدمات"  wrapperClass="flex lg:items-start lg:items-center lg:flex-row flex-col gap-x-0 lg:gap-x-28" />
     </div>
 </template>
 
 <script>
 import InputC from '../components/elements/InputC.vue';
-import SelectC from '../components/elements/SelectC.vue';
 import TextareaC from '../components/elements/TextareaC.vue';
 export default {
-    components: { InputC, TextareaC, SelectC }
+    components: { InputC, TextareaC }
 }
 
 </script>
