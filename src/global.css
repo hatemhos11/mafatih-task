@@ -1,0 +1,75 @@
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4?styles=18006,18005,18004,18003');
+@import url('https://fonts.cdnfonts.com/css/segoe-script');
+
+@font-face {
+    font-family: 'Segoe UI', sans-serif;
+    src: url(assets/fonts/segoe_ui.ttf);
+}
+/* DEFAULTS */
+:root{
+    --main-color: #EDA31A;
+    --dark-color: #243840;
+    --bg-color: #F0F1F7;
+    --gray-color: #DADBE6;
+    --input-bg-color: #E1E1E5;
+    --alt-title-text: #9597A6;
+    --border-color: #707070; 
+    --alt-text: #545871;
+    --border-radius: 5px;
+    --long-border-radius: 15px;
+}
+body{
+    font-family: 'Segoe UI', sans-serif;
+    @apply h-[200vh] bg-white-blue xl:p-8 p-0 max-h-screen;
+}
+#page{
+    @apply xl:mr-10 xl:mt-10 m-0 px-7 py-5 bg-white rounded-main;
+    min-height: calc(100vh - 70px);
+}
+.btn{
+    @apply flex justify-center items-center py-[7px] px-3 w-[147px] text-lg text-center rounded-main border border-main text-main;
+}
+.btn-fill{
+    @apply bg-main text-white;
+}
+img{
+    user-select: none;
+    cursor: pointer;
+}
+
+
+/* TITLE */
+.title{
+    @apply text-3xl text-title font-bold mb-3;
+    font-family: 'Segoe Script', sans-serif;
+}
+.sub-title{
+    @apply text-[22px] mb-7 text-black font-semibold italic;
+}
+
+
+/* INPUT | FORM */
+.input-wrapper{}
+.input-group{
+    @apply flex items-center flex-col md:flex-row gap-x-11 justify-between;
+}
+label{
+    @apply block whitespace-nowrap h-fit;
+}
+input, textarea, select{
+    @apply py-[5px] px-2 mb-4 mt-3 max-h-10 rounded-main text-lg bg-input border outline-none transition resize-none;
+}
+input:focus{
+    @apply border-main;
+}
+input::placeholder{
+    @apply text-xs text-placeholder;
+}
+
+.styled-select {
+    @apply relative inline-block w-[125px] text-alt font-bold border-main appearance-none ;
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    background: url(assets/icons/bottom-arrow-colored.svg) no-repeat 8px white;
+    text-overflow: '';
+}
