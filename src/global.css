@@ -51,13 +51,13 @@ img{
 /* INPUT | FORM */
 .input-wrapper{}
 .input-group{
-    @apply flex items-center flex-col md:flex-row gap-x-11 justify-between;
+    @apply grid grid-cols-1 md:grid-cols-2 gap-x-11;
 }
 label{
     @apply block whitespace-nowrap h-fit;
 }
 input, textarea, select{
-    @apply py-[5px] px-2 mb-4 mt-3 max-h-10 rounded-main text-lg bg-input border outline-none transition resize-none;
+    @apply py-[5px] px-2 mb-4 mt-3 rounded-main text-lg bg-input border outline-none transition resize-none;
 }
 input:focus{
     @apply border-main;

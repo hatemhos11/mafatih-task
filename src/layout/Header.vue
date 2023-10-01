@@ -11,7 +11,6 @@
 import Left from './header/left.vue';
 import Right from './header/right.vue';
 
-
 export default{
     name: 'header-com',
     components: { Right, Left }

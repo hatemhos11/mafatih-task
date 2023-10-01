@@ -1,5 +1,5 @@
 <template>
-    <div class="input-wrapper flex-grow" :class="wrapperClass">
+    <div class="input-wrapper" :class="wrapperClass">
         <label :for="name" >{{ label }}</label>
         <input :id="name" :class="inputClass" :placeholder="placeholder" class="input w-full" type="text" />
     </div>

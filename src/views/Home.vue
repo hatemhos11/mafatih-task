@@ -2,11 +2,11 @@
 <template>
     <div id="page">
         <div class="flex justify-between flex-wrap gap-8 mb-14">
-            <div>
+            <div class="basis-full md:basis-1/2">
                 <h2 class="title ">إعدادات الحساب</h2>
                 <h4 class="sub-title">معلومات الشركة</h4>
-                <InputC name="ar_company_name" label="اسم الشركه (العربيه)" wrapperClass="w-[400px]"/>
-                <InputC name="en_company_name" label="اسم الشركه (الانجليزية)" wrapperClass="w-[400px]"/>
+                <InputC name="ar_company_name" label="اسم الشركه (العربيه)" wrapperClass="max-w-full"/>
+                <InputC name="en_company_name" label="اسم الشركه (الانجليزية)" wrapperClass="max-w-full"/>
             </div>
             <div>
                 <img src="@/assets/images/company-img.png" alt="">

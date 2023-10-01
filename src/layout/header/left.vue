@@ -9,7 +9,7 @@
                 <img height="45" class="bg-white rounded-full" width="45" src="@/assets/images/alt-person.png" alt="profile">
             </RouterLink>
             <div class="flex gap-1 text-white">
-                <div>username</div>
+                <div class="hidden md:block">username</div>
                 <img src="@/assets/icons/bottom-arrow.svg" alt="b-arrow">
             </div>
         </div>
