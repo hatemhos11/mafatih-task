@@ -27,7 +27,7 @@ body{
     min-height: calc(100vh - 70px);
 }
 .btn{
-    @apply flex justify-center items-center py-[7px] px-3 w-[147px] text-lg text-center rounded-main border border-main text-main;
+    @apply flex justify-center hover:opacity-90 items-center py-[7px] px-3 w-[147px] text-lg text-center rounded-main border border-main text-main;
 }
 .btn-fill{
     @apply bg-main text-white;
