@@ -1,6 +1,9 @@
 
 <template>
     <div id="page">
+        <Modal :isOpen="isOpen" @close="closeModal">
+            <Subscribe/>
+        </Modal>
         <div class="flex justify-between flex-wrap gap-8 mb-14">
             <div class="basis-full md:basis-1/2">
                 <h2 class="title ">إعدادات الحساب</h2>
@@ -36,8 +39,20 @@
 <script>
 import InputC from '../components/elements/InputC.vue';
 import TextareaC from '../components/elements/TextareaC.vue';
+import Modal from '../components/Modals/Modal.vue';
+import OTP from '../components/Modals/OTP.vue';
+import LimitUsers from '../components/Modals/LimitUsers.vue';
+import Subscribe from '../components/Modals/Subscribe.vue';
 export default {
-    components: { InputC, TextareaC }
+    components: { InputC, TextareaC, Modal, OTP, LimitUsers, Subscribe },
+    data(){
+        return {isOpen: true}
+    },
+    methods: {
+        closeModal(){
+            this.isOpen = false
+        }
+    }
 }
 
 </script>

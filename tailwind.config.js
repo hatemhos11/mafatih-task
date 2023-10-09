@@ -16,6 +16,7 @@ module.exports = {
         "title": "#9597A6",
         "border": "#707070", 
         "alt": "#545871",
+        "red": "#F2472C"
       },
       borderRadius:{
         "main": "5px",
