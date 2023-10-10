@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.cdnfonts.com/css/segoe-ui-4?styles=18006,18005,18004,18003');
 @import url('https://fonts.cdnfonts.com/css/segoe-script');
 
@@ -18,26 +22,28 @@
     --border-radius: 5px;
     --long-border-radius: 15px;
 }
-body{
-    font-family: 'Segoe UI', sans-serif;
-    @apply h-[200vh] bg-white-blue xl:p-8 p-0 max-h-screen;
-}
-#page{
-    @apply xl:mr-10 xl:mt-10 m-0 px-7 py-5 bg-white rounded-main;
-    min-height: calc(100vh - 70px);
-}
-.btn{
-    @apply flex justify-center hover:opacity-90 items-center py-[7px] px-3 w-[147px] text-lg text-center rounded-main border border-main text-main;
-}
-.btn-fill{
-    @apply bg-main text-white;
-}
-img{
-    user-select: none;
-    cursor: pointer;
-}
+@layer base {
 
+    body{
+        font-family: 'Segoe UI', sans-serif;
+        @apply h-[200vh] bg-white-blue xl:p-8 p-0 max-h-screen;
+    }
+    #page{
+        @apply xl:mr-10 xl:mt-10 m-0 px-7 py-5 bg-white rounded-main;
+        min-height: calc(100vh - 70px);
+    }
 
+    .btn{
+        @apply flex justify-center hover:opacity-90 items-center py-[7px] px-3 w-[147px] text-lg text-center rounded-main border border-main text-main;
+    }
+    .btn-fill{
+        @apply bg-main text-white;
+    }
+    img{
+        user-select: none;
+        cursor: pointer;
+    }
+}
 /* TITLE */
 .title{
     @apply text-3xl text-title font-bold mb-3;

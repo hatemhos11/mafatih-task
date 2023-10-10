@@ -2,7 +2,7 @@
 <template>
     <div id="page">
         <Modal :isOpen="isOpen" @close="closeModal">
-            <Subscribe/>
+            <Dues/>
         </Modal>
         <div class="flex justify-between flex-wrap gap-8 mb-14">
             <div class="basis-full md:basis-1/2">
@@ -42,9 +42,10 @@ import TextareaC from '../components/elements/TextareaC.vue';
 import Modal from '../components/Modals/Modal.vue';
 import OTP from '../components/Modals/OTP.vue';
 import LimitUsers from '../components/Modals/LimitUsers.vue';
-import Subscribe from '../components/Modals/Subscribe.vue';
+import Dues from '../components/Modals/Dues.vue';
+import Info from '../components/Modals/Info.vue';
 export default {
-    components: { InputC, TextareaC, Modal, OTP, LimitUsers, Subscribe },
+    components: { InputC, TextareaC, Modal, OTP, LimitUsers, Dues },
     data(){
         return {isOpen: true}
     },

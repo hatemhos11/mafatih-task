@@ -11,12 +11,13 @@ module.exports = {
         "dark": "#243840",
         "white-blue": "#F0F1F7",
         "main-gray": "#DADBE6",
+        "dark-gray": "#9597A6",
         "input": "#E1E1E5",
         "placeholder": "#C9C9C8",
         "title": "#9597A6",
         "border": "#707070", 
         "alt": "#545871",
-        "red": "#F2472C"
+        "main-red": "#F2472C",
       },
       borderRadius:{
         "main": "5px",
